@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "random-org": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^7.0.0"
   }
 }
