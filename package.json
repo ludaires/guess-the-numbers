@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "browserify": "^16.5.0",
     "random-org": "^2.0.1"
   },
   "devDependencies": {
