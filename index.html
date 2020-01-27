@@ -1,11 +1,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Guess the number</title>
+  <title>Guess the numbers!</title>
 </head>
 <body>
-  <h1>What number did I choose?</h1>
-  <div id="main"></div>
+  <div id="main">
+    <h1>Welcome to the Mastermind Game</h1>
+    <h2>Game Rules</h2>
+    <p>I'll choose a combination of 4 number from 0 to 7. You need to guess the exactly same sequency. You'll have 10 chances to guess the numbers.</p>
+    <h2>Tips</h2>
+    <p>I'll let you know how many number you correct guessed in the total. Uhmm... OK! I'll be nice and I'm gonna tell you how many you guessed the correct location too.</p>
+    <button onclick='startGame()'id='game__start'> Let's start!!!</button>
+  </div>
+  <script src="bundle.js"></script>
   <script src="index.js"></script>
 </body>
 </html>
