@@ -1,16 +1,18 @@
-// front end part will be here.
-// const Player = require('./lib/player');
-// const Random = require('./lib/getRandomNumber');
-// let gameOver = false;
-
-// let player = new Player();
-// let random = new Random();
-
-// let start = document.getElementById('game__start');
-// start.addEventListener('click', function(){
-//     return startGame();
-// })
 
 
+document.getElementById('game__start').addEventListener('click', sayingHi);
 
-// To start the game I need to initialize player and start.
+function sayingHi(){
+    console.log('im here')
+   alert('Hi')
+}
+function startGame() {
+    console.log('Am i here?');
+    let input = document.querySelector('input').value;
+    input = input.split('');
+    let secretCode = new GenerateNumber().getSecret();
+    secretCode = secretCode.secretNumber;
+    let player = new Game(secretCode);
+    let results = player.guess(input);
+    return document.getElementById('game__results').innerHTML = results;
+}
